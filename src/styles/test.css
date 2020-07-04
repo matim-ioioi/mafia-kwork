@@ -1,58 +1,72 @@
-.nav-menu:hover, .nav-friends:hover {
-  color: #d60f0f !important;
-  text-shadow: 0 0 7px #d60f0f;
+.nav-menu.active,
+.nav-friends.active, .nav-menu:hover,
+.nav-friends:hover {
+  color: #ff575f !important;
+  text-shadow: 0 0 7px #ff575f;
 }
 
+.btn.focus,
 .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn.focus.btn-pay,
+.btn:focus.btn-pay {
+  -webkit-box-shadow: 0 0 10px #ff575f;
+          box-shadow: 0 0 10px #ff575f;
+}
+
+.wo-bs {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
 .left-side {
-  background-color: #232323;
-  background: -webkit-gradient(linear, left top, right top, from(#232323), to(#141414));
-  background: linear-gradient(to right, #232323, #141414);
+  background-color: #2c2c2c;
 }
 
-.nav-pan, .friends-pan {
-  border-bottom: 2px solid #ffffff;
+.nav-pan,
+.friends-pan {
+  border-bottom: 2px solid #6b6b6b;
 }
 
-.nav-menu, .profile-bal, .nav-friends {
+.nav-menu,
+.profile-bal,
+.nav-friends {
   margin: auto;
 }
 
-.nav-menu.active, .nav-friends.active {
-  color: #d60f0f !important;
+.nav-menu,
+.nav-friends {
+  color: #6b6b6b;
 }
 
 .profile-info {
   margin: auto;
   border-radius: 1.2rem;
   border-color: #140000;
-  background-color: rgba(20, 0, 0, 0.87);
-  background: -webkit-gradient(linear, left bottom, right top, from(#4f0000), to(#0c0c0c));
-  background: linear-gradient(to top right, #4f0000, #0c0c0c);
+  background: -webkit-gradient(linear, left bottom, right top, from(#432021), to(#232323));
+  background: linear-gradient(to top right, #432021, #232323);
 }
 
 .btn-bal {
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   background-color: rgba(20, 0, 0, 0.87);
-  background: -webkit-gradient(linear, left top, right top, from(#4f0000), to(#0c0c0c));
-  background: linear-gradient(to right, #4f0000, #0c0c0c);
+  background: -webkit-gradient(linear, left top, right top, from(#432021), to(#232323));
+  background: linear-gradient(to right, #432021, #232323);
 }
 
 .btn-pay {
-  border-radius: .7rem;
-  background-color: #d02d2d;
-  background: -webkit-gradient(linear, left top, right top, from(#d02d2d), to(#d44747));
-  background: linear-gradient(to right, #d02d2d, #d44747);
-  -webkit-box-shadow: 0 0 10px #D02D2D;
-          box-shadow: 0 0 10px #D02D2D;
+  border-radius: 0.7rem;
+  background: -webkit-gradient(linear, left top, right top, from(#d8292f), to(#ff4047));
+  background: linear-gradient(to right, #d8292f, #ff4047);
+  -webkit-box-shadow: 0 0 10px #d8292f;
+          box-shadow: 0 0 10px #d8292f;
 }
 
 .sphere {
-  margin: .7rem;
+  margin: 0.7rem;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
@@ -66,11 +80,13 @@
 }
 
 .nav-slider {
-  background-color: #d60f0f;
+  background-color: #ff575f;
   width: 10px;
   height: 2px;
   position: absolute;
-  -webkit-transition: left .7s, top .7s;
-  transition: left .7s, top .7s;
+  -webkit-transition: left 0.7s, top 0.7s;
+  transition: left 0.7s, top 0.7s;
+  -webkit-box-shadow: 0 0 5px #ff575f;
+          box-shadow: 0 0 5px #ff575f;
 }
 /*# sourceMappingURL=test.css.map */

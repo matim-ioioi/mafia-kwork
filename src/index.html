@@ -1,82 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/test.css">
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/test.css" />
 
     <title>Main page</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-3 min-vh-100 left-side">
-                <!--NAVIGATION PANEL-->
-                <div class="row d-flex justify-content-center mb-3 nav-pan">
-                    <div class="nav-slider"></div>
-                    <button class="btn btn-sm nav-menu text-light active">Profile</button>
-                    <button class="btn btn-sm nav-menu text-light">Game</button>
-                    <button class="btn btn-sm nav-menu text-light">History</button>
-                </div>
+      <div class="row">
+        <div class="col-3 min-vh-100 left-side">
+          <!--NAVIGATION PANEL-->
+          <div class="row d-flex justify-content-center mb-3 nav-pan">
+            <div class="nav-slider"></div>
+            <button class="btn btn-sm nav-menu active">
+              Profile
+            </button>
+            <button class="btn btn-sm nav-menu">Game</button>
+            <button class="btn btn-sm nav-menu">History</button>
+          </div>
 
-                <!--PROFILE INFO-->
-                <div class="row mb-3">
-                    <div class="profile-info p-3 w-75">
-                        <div class="row">
-                            <div class="col-4 prof-img">
-                                <img src="imgs/default.jpg" alt="Proile's photo" width="100%" height="100%">
-                            </div>
-                            <div class="col-8">
-                                <div class="row">
-                                    <span class="prof-stat" style="font-size: small; color: gray">Online<div class="sphere"></div></span>
-                                </div>
-                                <div class="row">
-                                    <span class="text-light text-wrap prof-name" style="font-size: x-large;">Tima Mavrin</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-6">
-                                <span class="text-wrap prof-name" style="font-size: small; color: gray">Total played:</span>
-                            </div>
-                            <div class="col-6">
-                                <span class="text-wrap prof-name" style="font-size: small; color: gray">Wins:</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-bal p-3 w-75">
-                        <div class="row">
-                            <div class="col d-flex justify-content-between p-0">
-                                <button class="btn text-light w-50 mr-2 btn-bal">Balance:</button>
-                                <button class="btn text-light w-50 ml-2 btn-pay">Pay</button>
-                            </div>
-                        </div>
-                    </div>
+          <!--PROFILE INFO-->
+          <div class="row mb-3">
+            <div class="profile-info p-3 w-75">
+              <div class="row">
+                <div class="col-4 prof-img">
+                  <img
+                    src="imgs/default.jpg"
+                    alt="Proile's photo"
+                    width="100%"
+                    height="100%"
+                  />
                 </div>
-
-                <!--FRIENDS & LOBBY-->
-                <div class="row d-flex justify-content-center mb-3 friends-pan w-75 m-auto">
-                    <button class="btn btn-sm nav-friends text-light">Friends</button>
-                    <button class="btn btn-sm nav-friends text-light">Add</button>
-                    <button class="btn btn-sm nav-friends text-light">Lobby</button>
+                <div class="col-8">
+                  <div class="row">
+                    <span
+                      class="prof-stat"
+                      style="font-size: small; color: gray;"
+                      >Online
+                      <div class="sphere"></div
+                    ></span>
+                  </div>
+                  <div class="row">
+                    <span
+                      class="text-light text-wrap prof-name"
+                      style="font-size: x-large;"
+                      >Tima Mavrin</span
+                    >
+                  </div>
                 </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6">
+                  <span
+                    class="text-wrap prof-name"
+                    style="font-size: small; color: gray;"
+                    >Total played:</span
+                  >
+                </div>
+                <div class="col-6">
+                  <span
+                    class="text-wrap prof-name"
+                    style="font-size: small; color: gray;"
+                    >Wins:</span
+                  >
+                </div>
+              </div>
             </div>
-            <div class="col-9 bg-success min-vh-100">
-
+            <div class="profile-bal p-3 w-75">
+              <div class="row">
+                <div class="col d-flex justify-content-between p-0">
+                  <button class="btn text-light w-50 mr-2 btn-bal">
+                    Balance:
+                  </button>
+                  <button class="btn text-light w-50 ml-2 btn-pay">Pay</button>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <!--FRIENDS & LOBBY-->
+          <div
+            class="row d-flex justify-content-center mb-3 friends-pan w-75 m-auto"
+          >
+            <button class="btn btn-sm nav-friends">Friends</button>
+            <button class="btn btn-sm nav-friends">Add</button>
+            <button class="btn btn-sm nav-friends">Lobby</button>
+          </div>
         </div>
+        <div class="col-9 bg-success min-vh-100"></div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
     <script src="scripts/main.js"></script>
-
-</body>
+  </body>
 </html>
