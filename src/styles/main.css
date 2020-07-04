@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav-menu.active,
 .nav-friends.active, .nav-menu:hover,
 .nav-friends:hover {
@@ -26,6 +27,11 @@
   background-color: #2c2c2c;
 }
 
+.prof-stat {
+  color: #6b6b6b;
+  font-size: small;
+}
+
 .nav-pan,
 .friends-pan {
   border-bottom: 2px solid #6b6b6b;
@@ -43,11 +49,17 @@
 }
 
 .profile-info {
+  width: 90%;
   margin: auto;
   border-radius: 1.2rem;
   border-color: #140000;
   background: -webkit-gradient(linear, left bottom, right top, from(#432021), to(#232323));
   background: linear-gradient(to top right, #432021, #232323);
+}
+
+.profile-bal {
+  width: 90%;
+  margin: auto;
 }
 
 .btn-bal {
@@ -57,8 +69,10 @@
   background: linear-gradient(to right, #432021, #232323);
 }
 
-.btn-pay {
+.btn-pay,
+.add-friend {
   border-radius: 0.7rem;
+  border-color: transparent;
   background: -webkit-gradient(linear, left top, right top, from(#d8292f), to(#ff4047));
   background: linear-gradient(to right, #d8292f, #ff4047);
   -webkit-box-shadow: 0 0 10px #d8292f;
@@ -89,4 +103,46 @@
   -webkit-box-shadow: 0 0 5px #ff575f;
           box-shadow: 0 0 5px #ff575f;
 }
-/*# sourceMappingURL=test.css.map */
+
+.add-friend {
+  width: 75%;
+  height: 4rem;
+  border-radius: 20px;
+}
+
+#friends-div .friends {
+  border-radius: 20px;
+  height: 4rem;
+}
+
+#friends-div::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px;
+  /* ширина scrollbar'a */
+}
+
+.fr-img {
+  position: relative;
+  top: 0.6rem;
+  left: 0.6rem;
+}
+
+.add-friend-input {
+  margin-left: 3rem;
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px dotted #c7c7c7;
+  caret-color: #c7c7c7;
+  color: white;
+}
+
+.add-friend-input::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+
+.add-friend-input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */

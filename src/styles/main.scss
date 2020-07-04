@@ -10,6 +10,7 @@ $indicator_h: 7px;
   color: $txt_hl_cl !important;
   text-shadow: 0 0 7px $txt_hl_cl;
 }
+
 .btn.focus,
 .btn:focus {
   &.btn-pay {
@@ -22,6 +23,10 @@ $indicator_h: 7px;
 }
 .left-side {
   background-color: $left_slide_cl;
+}
+.prof-stat {
+  color: $txt_cl;
+  font-size: small;
 }
 .nav-pan,
 .friends-pan {
@@ -43,18 +48,25 @@ $indicator_h: 7px;
   color: $txt_cl;
 }
 .profile-info {
+  width: 90%;
   margin: auto;
   border-radius: 1.2rem;
   border-color: rgb(20, 0, 0);
   background: linear-gradient(to top right, #432021, #232323);
+}
+.profile-bal {
+  width: 90%;
+  margin: auto;
 }
 .btn-bal {
   border-radius: 0.7rem;
   background-color: rgba(20, 0, 0, 0.87);
   background: linear-gradient(to right, #432021, #232323);
 }
-.btn-pay {
+.btn-pay,
+.add-friend {
   border-radius: 0.7rem;
+  border-color: transparent;
   background: linear-gradient(to right, #d8292f, #ff4047);
   box-shadow: 0 0 10px #d8292f;
 }
@@ -79,4 +91,40 @@ $indicator_h: 7px;
   position: absolute;
   transition: left 0.7s, top 0.7s;
   box-shadow: 0 0 5px $txt_hl_cl;
+}
+.add-friend {
+  width: 75%;
+  height: 4rem;
+  border-radius: 20px;
+}
+#friends-div {
+  .friends {
+    border-radius: 20px;
+    height: 4rem;
+  }
+  &::-webkit-scrollbar {
+    /* chrome based */
+    width: 0px; /* ширина scrollbar'a */
+  }
+}
+.fr-img {
+  position: relative;
+  top: 0.6rem;
+  left: 0.6rem;
+}
+.add-friend-input {
+  margin-left: 3rem;
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px dotted #c7c7c7;
+  caret-color: #c7c7c7;
+  color: white;
+  &::-webkit-input-placeholder {
+    color: #c7c7c7;
+  }
+  &:focus {
+    outline: none;
+  }
 }

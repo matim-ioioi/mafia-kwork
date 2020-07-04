@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/test.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
     <title>Main page</title>
   </head>
@@ -34,8 +34,8 @@
           </div>
 
           <!--PROFILE INFO-->
-          <div class="row mb-3">
-            <div class="profile-info p-3 w-75">
+          <div class="row mb-3" id="profile-div">
+            <div class="profile-info p-3">
               <div class="row">
                 <div class="col-4 prof-img">
                   <img
@@ -47,9 +47,7 @@
                 </div>
                 <div class="col-8">
                   <div class="row">
-                    <span
-                      class="prof-stat"
-                      style="font-size: small; color: gray;"
+                    <span class="prof-stat"
                       >Online
                       <div class="sphere"></div
                     ></span>
@@ -80,25 +78,51 @@
                 </div>
               </div>
             </div>
-            <div class="profile-bal p-3 w-75">
+            <div class="profile-bal p-3">
               <div class="row">
                 <div class="col d-flex justify-content-between p-0">
                   <button class="btn text-light w-50 mr-2 btn-bal">
                     Balance:
                   </button>
-                  <button class="btn text-light w-50 ml-2 btn-pay">Pay</button>
+                  <button class="btn text-light w-50 ml-2 btn-pay">
+                    Pay
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
           <!--FRIENDS & LOBBY-->
+          <div class="row d-flex justify-content-center">
+            <div class="friends-pan w-75 d-flex mb-3">
+              <button class="btn btn-sm nav-friends">
+                Friends
+              </button>
+              <button class="btn btn-sm nav-friends">Add</button>
+              <button class="btn btn-sm nav-friends">
+                Lobby
+              </button>
+            </div>
+            <div
+              class="container-fluid overflow-auto w-75"
+              id="friends-div"
+            ></div>
+          </div>
+
+          <!--ADD FRIENDS-->
           <div
-            class="row d-flex justify-content-center mb-3 friends-pan w-75 m-auto"
+            class="row d-flex justify-content-center my-5"
+            id="add-friend-div"
           >
-            <button class="btn btn-sm nav-friends">Friends</button>
-            <button class="btn btn-sm nav-friends">Add</button>
-            <button class="btn btn-sm nav-friends">Lobby</button>
+            <div class="add-friend text-light border p-1">
+              <span class="ml-3">Add a friend</span>
+              <br />
+              <input
+                class="add-friend-input"
+                type="email"
+                placeholder="example@example.com"
+              />
+            </div>
           </div>
         </div>
         <div class="col-9 bg-success min-vh-100"></div>
