@@ -1,0 +1,76 @@
+.nav-menu:hover, .nav-friends:hover {
+  color: #d60f0f !important;
+  text-shadow: 0 0 7px #d60f0f;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.left-side {
+  background-color: #232323;
+  background: -webkit-gradient(linear, left top, right top, from(#232323), to(#141414));
+  background: linear-gradient(to right, #232323, #141414);
+}
+
+.nav-pan, .friends-pan {
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav-menu, .profile-bal, .nav-friends {
+  margin: auto;
+}
+
+.nav-menu.active, .nav-friends.active {
+  color: #d60f0f !important;
+}
+
+.profile-info {
+  margin: auto;
+  border-radius: 1.2rem;
+  border-color: #140000;
+  background-color: rgba(20, 0, 0, 0.87);
+  background: -webkit-gradient(linear, left bottom, right top, from(#4f0000), to(#0c0c0c));
+  background: linear-gradient(to top right, #4f0000, #0c0c0c);
+}
+
+.btn-bal {
+  border-radius: .7rem;
+  background-color: rgba(20, 0, 0, 0.87);
+  background: -webkit-gradient(linear, left top, right top, from(#4f0000), to(#0c0c0c));
+  background: linear-gradient(to right, #4f0000, #0c0c0c);
+}
+
+.btn-pay {
+  border-radius: .7rem;
+  background-color: #d02d2d;
+  background: -webkit-gradient(linear, left top, right top, from(#d02d2d), to(#d44747));
+  background: linear-gradient(to right, #d02d2d, #d44747);
+  -webkit-box-shadow: 0 0 10px #D02D2D;
+          box-shadow: 0 0 10px #D02D2D;
+}
+
+.sphere {
+  margin: .7rem;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  background-color: #00ff00;
+  -webkit-box-shadow: 0 0 10px #00ff00, 3px 3px 10px #00ff00, -3px -3px 10px #00ff00, -3px 3px 10px #00ff00, 3px -3px 10px #00ff00;
+          box-shadow: 0 0 10px #00ff00, 3px 3px 10px #00ff00, -3px -3px 10px #00ff00, -3px 3px 10px #00ff00, 3px -3px 10px #00ff00;
+  display: inline-block;
+}
+
+.nav-slider {
+  background-color: #d60f0f;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  -webkit-transition: left .7s, top .7s;
+  transition: left .7s, top .7s;
+}
+/*# sourceMappingURL=test.css.map */
