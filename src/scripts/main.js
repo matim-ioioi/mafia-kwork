@@ -37,16 +37,22 @@ $(document).ready(function () {
       $("#add-friend-div").outerHeight(true) +
       "px"
   );
+
   // friends div loading/creating
-  for (let i = 0; i < 6; i++) {
-    $("#friends-div").append(
-      "<div class='border mb-3 friends' id='friend_" +
-        i +
-        "'><img class='rounded-circle fr-img' src='imgs/default.jpg' alt='photo' width='" +
-        ($(".add-friend").innerWidth() / 4 - 20) +
-        "px' height='" +
-        ($(".add-friend").innerHeight() - 20) +
-        "px'/></div>"
-    );
-  }
+  $.ajax({
+    url: "includes/friends.html",
+    success: function (response) {
+      for (let i = 0; i < 6; i++) $("#friends-div").append(response);
+      $(".fr-img").css("width", $(".add-friend").innerWidth() / 4 - 25 + "px");
+      $(".fr-img").css("height", $(".add-friend").innerHeight() - 15 + "px");
+      $(".friends").hover(
+        function () {
+          $(this).find(".add-btn").css("visibility", "visible");
+        },
+        function () {
+          $(this).find(".add-btn").css("visibility", "hidden");
+        }
+      );
+    },
+  });
 });

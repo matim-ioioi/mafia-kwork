@@ -52,7 +52,7 @@ $indicator_h: 7px;
   margin: auto;
   border-radius: 1.2rem;
   border-color: rgb(20, 0, 0);
-  background: linear-gradient(to top right, #432021, #232323);
+  background: linear-gradient(to top right, #422021, #232323);
 }
 .profile-bal {
   width: 90%;
@@ -61,7 +61,7 @@ $indicator_h: 7px;
 .btn-bal {
   border-radius: 0.7rem;
   background-color: rgba(20, 0, 0, 0.87);
-  background: linear-gradient(to right, #432021, #232323);
+  background: linear-gradient(to right, #422021, #232323);
 }
 .btn-pay,
 .add-friend {
@@ -99,6 +99,7 @@ $indicator_h: 7px;
 }
 #friends-div {
   .friends {
+    background-color: #232323;
     border-radius: 20px;
     height: 4rem;
   }
