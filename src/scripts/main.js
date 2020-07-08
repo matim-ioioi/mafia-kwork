@@ -27,14 +27,15 @@ $(document).ready(function () {
     $(".nav-slider").css("top", $(".active").outerHeight(true));
   });
 
-  // friends div init
-  $("#friends-div").css(
+  // friends-wrapper init
+  $("#friends-wrapper").css(
     "max-height",
     $(document).innerHeight() -
-      $("#profile-div").outerHeight(true) -
-      $(".nav-pan").outerHeight(true) -
-      $(".friends-pan").outerHeight(true) -
-      $("#add-friend-div").outerHeight(true) +
+      parseInt($(".menu").css("padding-bottom")) -
+      $(".menu__nav--pages").outerHeight(true) -
+      $(".menu__profile").outerHeight(true) -
+      $(".menu__nav--friends").outerHeight(true) -
+      $(".menu__add-friend").outerHeight(true) +
       "px"
   );
 
@@ -42,15 +43,25 @@ $(document).ready(function () {
   $.ajax({
     url: "includes/friends.html",
     success: function (response) {
-      for (let i = 0; i < 6; i++) $("#friends-div").append(response);
-      $(".fr-img").css("width", $(".add-friend").innerWidth() / 4 - 25 + "px");
-      $(".fr-img").css("height", $(".add-friend").innerHeight() - 15 + "px");
-      $(".friends").hover(
+      for (let i = 0; i < 6; i++) $("#friends-wrapper").append(response);
+      $(this)
+        .find($(".img"))
+        .css(
+          "width",
+          $(".menu__add-friend .wrapper").innerWidth() / 4 - 25 + "px"
+        );
+      $(this)
+        .find($(".img"))
+        .css(
+          "height",
+          $(".menu__add-friend .wrapper").innerHeight() - 15 + "px"
+        );
+      $(".friend").hover(
         function () {
-          $(this).find(".add-btn").css("visibility", "visible");
+          $(this).find(".add").css("visibility", "visible");
         },
         function () {
-          $(this).find(".add-btn").css("visibility", "hidden");
+          $(this).find(".add").css("visibility", "hidden");
         }
       );
     },

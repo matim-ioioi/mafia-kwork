@@ -20,114 +20,73 @@
     <title>Main page</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-3 min-vh-100 left-side">
-          <!--NAVIGATION PANEL-->
-          <div class="row d-flex justify-content-center mb-3 nav-pan">
-            <div class="nav-slider"></div>
-            <button class="btn btn-sm nav-menu active">
-              Profile
-            </button>
-            <button class="btn btn-sm nav-menu">Game</button>
-            <button class="btn btn-sm nav-menu">History</button>
-          </div>
-
-          <!--PROFILE INFO-->
-          <div class="row mb-3" id="profile-div">
-            <div class="profile-info p-3">
-              <div class="row">
-                <div class="col-4 prof-img">
-                  <img
-                    src="imgs/default.png"
-                    alt="Proile's photo"
-                    width="100%"
-                    height="100%"
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="row">
-                    <span class="prof-stat"
-                      >Online
-                      <div class="sphere"></div
-                    ></span>
-                  </div>
-                  <div class="row">
-                    <span
-                      class="text-light text-wrap prof-name"
-                      style="font-size: x-large;"
-                      >Tima Mavrin</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-6">
-                  <span
-                    class="text-wrap prof-name"
-                    style="font-size: small; color: gray;"
-                    >Total played:</span
-                  >
-                </div>
-                <div class="col-6">
-                  <span
-                    class="text-wrap prof-name"
-                    style="font-size: small; color: gray;"
-                    >Wins:</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="profile-bal p-3">
-              <div class="row">
-                <div class="col d-flex justify-content-between p-0">
-                  <button class="btn text-light w-50 mr-2 btn-bal">
-                    Balance:
-                  </button>
-                  <button class="btn text-light w-50 ml-2 btn-pay">
-                    Pay
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--FRIENDS & LOBBY-->
-          <div class="row d-flex justify-content-center">
-            <div class="friends-pan w-75 d-flex mb-3">
-              <button class="btn btn-sm nav-friends">
-                Friends
-              </button>
-              <button class="btn btn-sm nav-friends">Add</button>
-              <button class="btn btn-sm nav-friends">
-                Lobby
-              </button>
-            </div>
-            <div
-              class="container-fluid overflow-auto w-75"
-              id="friends-div"
-            ></div>
-          </div>
-
-          <!--ADD FRIENDS-->
-          <div
-            class="row d-flex justify-content-center my-5"
-            id="add-friend-div"
-          >
-            <div class="add-friend text-light border p-1">
-              <span class="ml-3">Add a friend</span>
-              <br />
-              <input
-                class="add-friend-input"
-                type="email"
-                placeholder="example@example.com"
+    <!-- LEFT-SIDE MENU -->
+    <aside class="menu">
+      <!-- MAIN NAVIGATION BTNS SECTION -->
+      <section class="menu__nav--pages">
+        <div class="nav-btns">
+          <div class="nav-slider"></div>
+          <button class="btn btn-sm nav-menu active">Profile</button>
+          <button class="btn btn-sm nav-menu">Game</button>
+          <button class="btn btn-sm nav-menu">History</button>
+        </div>
+      </section>
+      <!-- PROFILE SECTION -->
+      <section class="menu__profile">
+        <!-- PROFILE INFO (photo, online, name) -->
+        <div class="menu__profile__info">
+          <div class="menu__profile__info--name">
+            <div class="photo">
+              <img
+                src="imgs/default.png"
+                alt="Proile's photo"
+                width="100%"
+                height="100%"
               />
             </div>
+            <div class="info">
+              <div class="online">
+                <span class="online--text">Online</span>
+                <img class="online--img" src="imgs/online.png" alt="online" />
+              </div>
+              <div class="nickname">
+                <span class="nickname--text">Tima Mavrin</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu__profile__info--stats">
+            <span class="total-played">Total played: 1675</span>
+            <span class="total-wins">Wins: 1342</span>
           </div>
         </div>
-        <div class="col-9 bg-success min-vh-100"></div>
-      </div>
-    </div>
+        <!-- BALANCE INFO & PAY BUTTON -->
+        <div class="menu__profile__balance">
+          <button class="btn btn-bal">Balance:</button>
+          <button class="btn btn-pay">Pay</button>
+        </div>
+      </section>
+      <!-- FRIENDS NAVIGATION BTNS SECTION -->
+      <section class="menu__nav--friends">
+        <div class="nav-btns">
+          <button class="btn btn-sm nav-friends active">Friends</button>
+          <button class="btn btn-sm nav-friends">Add</button>
+          <button class="btn btn-sm nav-friends">Lobby</button>
+        </div>
+      </section>
+      <!-- FRIENDS SECTION -->
+      <section class="menu__friends">
+        <div class="overflow-auto w-75" id="friends-wrapper"></div>
+      </section>
+      <!-- ADD A FRIEND SECTION -->
+      <section class="menu__add-friend">
+        <div class="wrapper">
+          <span class="ml-3">Add a friend</span>
+          <br />
+          <input type="email" placeholder="example@example.com" />
+        </div>
+      </section>
+    </aside>
+    <main class="content"></main>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
