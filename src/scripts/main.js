@@ -28,16 +28,29 @@ $(document).ready(function () {
   });
 
   // friends-wrapper init
-  $("#friends-wrapper").css(
-    "max-height",
-    $(document).innerHeight() -
+  $(window).resize(function () {
+    $(".menu__friends" && "#friends-wrapper").css(
+      "height",
+      $(window).innerHeight() -
+        parseInt($(".menu").css("padding-bottom")) -
+        $(".menu__nav--pages").outerHeight(true) -
+        $(".menu__profile").outerHeight(true) -
+        $(".menu__nav--friends").outerHeight(true) -
+        $(".menu__add-friend").outerHeight(true) +
+        "px"
+    );
+  });
+  $(".menu__friends" && "#friends-wrapper").css({
+    minHeight: $(".wrapper").outerHeight(true) * 1.5,
+    height:
+      $(window).innerHeight() -
       parseInt($(".menu").css("padding-bottom")) -
       $(".menu__nav--pages").outerHeight(true) -
       $(".menu__profile").outerHeight(true) -
       $(".menu__nav--friends").outerHeight(true) -
       $(".menu__add-friend").outerHeight(true) +
-      "px"
-  );
+      "px",
+  });
 
   // friends div loading/creating
   $.ajax({
@@ -66,4 +79,6 @@ $(document).ready(function () {
       );
     },
   });
+
+  $("#add-email").width($(".wrapper").width() - $(".wrapper").width() / 3);
 });

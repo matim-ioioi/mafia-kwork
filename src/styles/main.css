@@ -12,9 +12,15 @@
   border-bottom: 2px solid #6b6b6b;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu {
-  width: 25%;
-  height: 100%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   background-color: #2c2c2c;
   padding-bottom: 1.5rem;
 }
@@ -29,6 +35,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.menu .menu__nav--pages .nav-btns .nav-slider {
+  background-color: #ff575f;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  -webkit-transition: left 0.7s, top 0.7s;
+  transition: left 0.7s, top 0.7s;
+  -webkit-box-shadow: 0 0 5px #ff575f;
+          box-shadow: 0 0 5px #ff575f;
 }
 
 .menu .menu__profile {
@@ -168,6 +185,11 @@
 .menu .menu__add-friend .wrapper {
   width: 75%;
   height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: white;
   border-radius: 20px;
   background: -webkit-gradient(linear, left top, right top, from(#d8292f), to(#ff4047));
@@ -177,7 +199,7 @@
 }
 
 .menu .menu__add-friend .wrapper input {
-  margin-left: 3rem;
+  margin: auto;
   background: transparent;
   border-top: 0;
   border-left: 0;
@@ -201,15 +223,11 @@
   color: #6b6b6b;
 }
 
-.menu .nav-slider {
-  background-color: #ff575f;
-  width: 10px;
-  height: 2px;
-  position: absolute;
-  -webkit-transition: left 0.7s, top 0.7s;
-  transition: left 0.7s, top 0.7s;
-  -webkit-box-shadow: 0 0 5px #ff575f;
-          box-shadow: 0 0 5px #ff575f;
+.content {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  background-color: green;
+  padding: 1.5rem 3rem;
 }
 
 .btn.focus,

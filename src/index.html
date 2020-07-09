@@ -28,7 +28,7 @@
           <div class="nav-slider"></div>
           <button class="btn btn-sm nav-menu active">Profile</button>
           <button class="btn btn-sm nav-menu">Game</button>
-          <button class="btn btn-sm nav-menu">History</button>
+          <button class="btn btn-sm nav-menu">Shop</button>
         </div>
       </section>
       <!-- PROFILE SECTION -->
@@ -81,12 +81,20 @@
       <section class="menu__add-friend">
         <div class="wrapper">
           <span class="ml-3">Add a friend</span>
-          <br />
-          <input type="email" placeholder="example@example.com" />
+          <input
+            id="add-email"
+            type="email"
+            placeholder="example@example.com"
+          />
         </div>
       </section>
     </aside>
-    <main class="content"></main>
+    <!-- MAIN CONTENT BLOCK -->
+    <main class="container-fluid content">
+      <section class="content__bunker"></section>
+      <section class="content__ads"></section>
+      <section class="content__chat"></section>
+    </main>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
