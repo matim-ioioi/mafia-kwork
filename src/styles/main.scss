@@ -180,6 +180,64 @@ body {
   flex-basis: 75%;
   background-color: green;
   padding: 1.5rem 3rem;
+  background-color: #232323;
+
+  .content__bunker {
+    background: linear-gradient(to top, #e42b32, #fe3f47);
+    border-radius: 1rem;
+    height: 30vh;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    .content__bunker--head {
+      width: 100%;
+      color: $txt_name_cl;
+    }
+    .content__bunker--body {
+      width: 100%;
+      color: $txt_name_cl;
+    }
+    .content__bunker--search {
+      width: 100%;
+    }
+  }
+
+  .content__ads {
+    height: 25vh;
+    margin-bottom: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    .ad {
+      border-radius: 1.5rem;
+      &#ad1 {
+        flex-basis: 45%;
+        background-color: #01ded7;
+      }
+      &#ad2 {
+        flex-basis: 25%;
+        background-color: #2c2c2c;
+      }
+      &#ad3 {
+        flex-basis: 25%;
+        background-color: #358162;
+      }
+    }
+  }
+
+  .content__chat {
+    height: 30vh;
+    .messages {
+      border-radius: 1rem 1rem 0 0;
+      height: 80%;
+      background-color: #2c2c2c;
+    }
+    .enter {
+      border-radius: 0 0 1rem 1rem;
+      height: 20%;
+      background-color: #191818;
+    }
+  }
 }
 
 .btn.focus,

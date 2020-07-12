@@ -228,6 +228,84 @@ body {
       flex-basis: 75%;
   background-color: green;
   padding: 1.5rem 3rem;
+  background-color: #232323;
+}
+
+.content .content__bunker {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e42b32), to(#fe3f47));
+  background: linear-gradient(to top, #e42b32, #fe3f47);
+  border-radius: 1rem;
+  height: 30vh;
+  padding: 1.5rem 3rem;
+  margin-bottom: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .content__bunker .content__bunker--head {
+  width: 100%;
+  color: white;
+}
+
+.content .content__bunker .content__bunker--body {
+  width: 100%;
+  color: white;
+}
+
+.content .content__bunker .content__bunker--search {
+  width: 100%;
+}
+
+.content .content__ads {
+  height: 25vh;
+  margin-bottom: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .content__ads .ad {
+  border-radius: 1.5rem;
+}
+
+.content .content__ads .ad#ad1 {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  background-color: #01ded7;
+}
+
+.content .content__ads .ad#ad2 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background-color: #2c2c2c;
+}
+
+.content .content__ads .ad#ad3 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background-color: #358162;
+}
+
+.content .content__chat {
+  height: 30vh;
+}
+
+.content .content__chat .messages {
+  border-radius: 1rem 1rem 0 0;
+  height: 80%;
+  background-color: #2c2c2c;
+}
+
+.content .content__chat .enter {
+  border-radius: 0 0 1rem 1rem;
+  height: 20%;
+  background-color: #191818;
 }
 
 .btn.focus,
