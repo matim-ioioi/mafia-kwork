@@ -35,8 +35,7 @@ body {
       justify-content: space-between;
       .nav-slider {
         background-color: $txt_hl_cl;
-        width: 10px;
-        height: 2px;
+        @include size(10px, 2px);
         position: absolute;
         transition: left 0.7s, top 0.7s;
         box-shadow: 0 0 5px $txt_hl_cl;
@@ -204,7 +203,7 @@ body {
   }
 
   .content__ads {
-    height: 25vh;
+    @include size($height: 25vh);
     margin-bottom: 2.2rem;
     display: flex;
     justify-content: space-between;
@@ -226,15 +225,15 @@ body {
   }
 
   .content__chat {
-    height: 30vh;
+    @include size($height: 30vh);
     .messages {
       border-radius: 1rem 1rem 0 0;
-      height: 80%;
+      @include size($height: 80%);
       background-color: #2c2c2c;
     }
     .enter {
       border-radius: 0 0 1rem 1rem;
-      height: 20%;
+      @include size($height: 20%);
       background-color: #191818;
     }
   }
