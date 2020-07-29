@@ -235,7 +235,8 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, from(#e42b32), to(#fe3f47));
   background: linear-gradient(to top, #e42b32, #fe3f47);
   border-radius: 1rem;
-  height: 30vh;
+  width: 100%;
+  height: 30%;
   padding: 1.5rem 3rem;
   margin-bottom: 2.2rem;
   display: -webkit-box;
@@ -247,21 +248,30 @@ body {
 
 .content .content__bunker .content__bunker--head {
   width: 100%;
+  max-height: 30%;
   color: white;
+  font-size: 2.5rem;
 }
 
 .content .content__bunker .content__bunker--body {
   width: 100%;
+  max-height: 30%;
   color: white;
+  font-size: 1.2rem;
 }
 
 .content .content__bunker .content__bunker--search {
   width: 100%;
+  max-height: 30%;
+}
+
+.content .content__bunker .content__bunker--search .btn {
+  width: 15rem;
 }
 
 .content .content__ads {
   width: 100%;
-  height: 25vh;
+  height: 25%;
   margin-bottom: 2.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,23 +281,39 @@ body {
           justify-content: space-between;
 }
 
-.content .content__ads .ad {
+.content .content__ads .content__ads__item {
   border-radius: 1.5rem;
+  padding: 1.5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
 }
 
-.content .content__ads .ad#ad1 {
+.content .content__ads .content__ads__item__header {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.content .content__ads .content__ads__item__body {
+  font-size: 1.2rem;
+}
+
+.content .content__ads .content__ads__item#ad1 {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   background-color: #01ded7;
 }
 
-.content .content__ads .ad#ad2 {
+.content .content__ads .content__ads__item#ad2 {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   background-color: #2c2c2c;
 }
 
-.content .content__ads .ad#ad3 {
+.content .content__ads .content__ads__item#ad3 {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   background-color: #358162;
@@ -295,7 +321,7 @@ body {
 
 .content .content__chat {
   width: 100%;
-  height: 30vh;
+  height: 30%;
 }
 
 .content .content__chat .messages {
